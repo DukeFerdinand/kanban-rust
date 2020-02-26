@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Task Board</title>
+  </head>
+  <body>
+    <script>
+      var Module = {};
+      var __cargo_web = {};
+      Object.defineProperty(Module, "canvas", {
+        get: function() {
+          if (__cargo_web.canvas) {
+            return __cargo_web.canvas;
+          }
+
+          var canvas = document.createElement("canvas");
+          document.querySelector("body").appendChild(canvas);
+          __cargo_web.canvas = canvas;
+
+          return canvas;
+        }
+      });
+    </script>
+
+    <script src="/kanban-wasm.js"></script>
+  </body>
+</html>

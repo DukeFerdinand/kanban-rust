@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "kanban-backend"
+    },
+    {
+      "path": "kanban-ui"
+    }
+  ],
+  "settings": {}
+}
